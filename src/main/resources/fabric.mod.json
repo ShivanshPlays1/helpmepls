@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "helpmepls",
+	"version": "${version}",
+	"name": "helpmepls",
+	"description": "help me pls",
+	"authors": [
+		"ShivanshPlays1!"
+	],
+	"contact": {
+		"homepage": "N/A",
+		"sources": "https://github.com/ShivanshPlays1/helpmepls"
+	},
+	"license": "MIT",
+	"icon": "assets/helpmepls/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shivanshplays1.helpmepls.Helpmepls"
+		],
+		"fabric-datagen": [
+			"net.shivanshplays1.helpmepls.HelpmeplsDataGenerator"
+		],
+		"client": [
+			"net.shivanshplays1.helpmepls.HelpmeplsClient"
+		]
+	},
+	"mixins": [
+		"helpmepls.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
